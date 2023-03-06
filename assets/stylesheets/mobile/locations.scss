@@ -1,0 +1,64 @@
+#reply-control .title-and-category {
+  align-items: start;
+}
+
+#reply-control .add-location-btn.no-text {
+  position: relative;
+  margin-left: 4px;
+
+  &:not(.btn-primary) {
+    background: var(--secondary);
+  }
+}
+
+#reply-control .show-location-controls .title-input {
+  display: flex;
+  flex-flow: wrap;
+
+  input#reply-title {
+    width: initial;
+    flex: 1 1 auto;
+  }
+}
+
+.add-location .control-group {
+  width: 100%;
+
+  .input-location,
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .location-name {
+    min-height: 36px;
+  }
+}
+
+.location-selector + .autocomplete {
+  width: 90%;
+}
+
+.map-container.small {
+  width: 100%;
+}
+
+.locations-map.expanded {
+  top: 55px;
+  height: calc(100vh - 55px);
+}
+
+.user-main
+  .about
+  .primary
+  .primary-textual
+  .location-and-website.map-location-enabled {
+  > span {
+    max-width: 100%;
+    padding: 0px;
+  }
+}
+
+.private_message .topic-body .user-location {
+  margin-left: 44px;
+}

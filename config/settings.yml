@@ -1,0 +1,152 @@
+plugins:
+  location_enabled:
+    client: true
+    default: true
+  location_hamburger_menu_map_link:
+    client: true
+    default: false
+  location_input_fields_enabled:
+    client: true
+    default: true
+  location_input_fields:
+    client: true
+    type: list
+    default: 'street|postalcode|city|countrycode'
+    choices:
+      - street
+      - neighbourhood
+      - postalcode
+      - city
+      - state
+      - countrycode
+      - coordinates
+  location_geocoding:
+    client: true
+    type: enum
+    default: 'optional'
+    choices:
+     - none
+     - optional
+     - required
+  location_geocoding_language:
+    client: true
+    default: 'user'
+    enum: "LocationGeocodingLanguageSiteSetting"
+  location_geocoding_provider:
+    default: 'nominatim'
+    client: true
+    type: 'enum'
+    choices:
+      - location_iq
+      - mapbox
+      - mapquest
+      - mapzen
+      - nominatim
+      - opencagedata
+  location_geocoding_api_key:
+    default: ''
+  location_geocoding_timeout:
+    default: 3
+  location_geocoding_rate_limit:
+    default: 6
+  location_geocoding_debounce:
+    default: 400
+    client: true
+  location_map_tile_layer:
+    default: "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png"
+    client: true
+  location_map_tile_layer_subdomains:
+    default: ""
+    client: true
+  location_map_attribution:
+    default: "&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>, &copy; <a href='http://cartodb.com/attributions'>CartoDB</a>"
+    client: true
+  location_category_map_filter:
+    default: true
+    client: true
+  location_topic_map:
+    default: true
+    client: true
+  location_topic_status_icon:
+    default: false
+    client: true
+  location_map_filter_closed:
+    default: false
+  location_map_zoom:
+    default: 2
+    client: true
+  location_map_marker_zoom:
+    default: 16
+    client: true
+  location_map_marker_cluster_multiplier:
+    default: 6
+    client: true
+  location_map_marker_category_color:
+    default: false
+    client: true
+  location_map_expanded_zoom:
+    default: 2
+  location_map_center_lat:
+    default: '30'
+    client: true
+  location_map_center_lon:
+    default: '5'
+    client: true
+  location_map_max_topics:
+    default: 100
+    client: true
+  location_map_maker_cluster_enabled:
+    default: true
+    client: true
+  location_layouts_map_search_enabled:
+    default: false
+    client: true
+  location_layouts_map_show_avatar:
+    default: false
+    client: true
+  location_users_map:
+    default: false
+    client: true
+  location_user_avatar:
+    default: false
+    client: true
+  location_users_map_limit:
+    default: 50
+  location_users_map_default:
+    default: false
+    client: true
+  location_user_post:
+    default: false
+    client: true
+  location_user_post_format:
+    type: list
+    default: ''
+    client: true
+  location_user_profile_map:
+    default: true
+    client: true
+  location_user_profile_format:
+    type: list
+    default: ''
+    client: true
+  location_hide_labels:
+    default: false
+    client: true
+  location_add_no_text:
+    default: false
+    client: true
+  location_country_default:
+    default: ''
+    client: true
+    enum: 'LocationCountryDefaultSiteSetting'
+  location_country_default_apply_to_all_searches:
+    type: bool
+    default: false
+    client: false
+  location_topic_default:
+    type: enum
+    default: 'none'
+    client: true
+    choices:
+      - none
+      - user

@@ -1,0 +1,49 @@
+#reply-control .composer-fields .title-and-category.show-location-controls {
+  align-items: flex-start;
+
+  &.location-add-no-text {
+    & > div:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  .category-input {
+    flex: 1 0 30%;
+
+    .select-kit {
+      min-width: 200px;
+    }
+  }
+}
+
+#reply-control .with-tags .title-and-category.show-location-controls {
+  .category-input {
+    flex: 1 0 20%;
+  }
+
+  .mini-tag-chooser {
+    flex: 1 1 20%;
+    margin-right: 5px;
+  }
+}
+
+.composer-controls-location .location-label {
+  display: flex;
+
+  button {
+    min-width: 35px;
+    text-align: left;
+
+    &.no-text {
+      text-align: center;
+
+      .fa {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.composer-controls-location .btn:not(:hover) {
+  background: var(--secondary);
+}
